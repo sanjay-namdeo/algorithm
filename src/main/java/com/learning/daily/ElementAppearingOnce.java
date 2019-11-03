@@ -10,6 +10,14 @@ import java.util.Map;
 
 public class ElementAppearingOnce {
     public int findNumberAppearingOnce(int[] inputArray) {
+        int result = inputArray[0];
+        for(int i = 1;i<inputArray.length; i++) {
+            result = result ^ inputArray[i];
+        }
+        return result;
+    }
+
+    public int findNumberAppearingOnce2(int[] inputArray) {
         HashMap<Integer, Integer> elementMap = new HashMap<>();
         for (int currentNumber : inputArray) {
             int count = 0;

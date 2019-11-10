@@ -1,4 +1,4 @@
-package com.learning;
+package com.learning.daily;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
